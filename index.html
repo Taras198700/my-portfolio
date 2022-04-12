@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
     <link rel="icon" href="img/free-icon-portfolio-943329.png">
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -15,17 +16,45 @@
             <div class="header">
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"><a href="#">Home</a></li>
-                        <li class="nav-item"><a href="#">About</a></li>
-                        <li class="nav-item"><a href="#">Services</a></li>
-                        <li class="nav-item"><a href="#">Portfolio</a></li>
-                        <li class="nav-item"><a href="#">Testimonials</a></li>
-                        <li class="nav-item"><a href="#">News</a></li>
-                        <li class="nav-item"><a href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <div class="wrapper">
+            <h1 class="title-h1">I Am <span>Developer</span></h1>
+        </div>
+        <button class="btn-scroll"><img src="img/scroll-icon.png" alt="Scroll"></button>
+    </section>
+    <section class="section-about">
+        <div class="wrapper">
+            <div class="box-about">
+                <div class="box-about-item">
+                    <img class="box-about_back" src="img/workplase.png" alt="Workplace">
+                    <p class="box-about_vertical">Work Place</p>
+                    <img class="box-about_front" src="img/my-photo.jpg" alt="Photo">
+                </div>
+                <div class="box-about-item">
+                    <h2 class="title-h2">About Me</h2>
+                    <p class="box-about_text">Over the past years, I have been improving my knowledge of JavaScript, Python, 
+                        HTML and CSS by learning thoroughly through self-development and participation
+                         in courses offered by ScriptJedi42 (practical course on JavaSript), SoftServe IT Academy
+                          and Logos IT Academy. I possess the willingness to learn and get to know software
+                           development specifics and methodologies, so as result I am always looking for learning
+                            opportunities. In addition to my experience, I believe I present good interpersonal skills
+                             and dedication to a team environment.
+                        I am continuing my studies with JavaScript and other programming languages and currently I am
+                         looking for an exciting opportunity to work as JavaSript Developer. I am certain that I would
+                          be a valuable asset to the company.</p>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

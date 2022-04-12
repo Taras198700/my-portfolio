@@ -1,6 +1,124 @@
 $dark:#22222b;
 $light: #faf9fe;
+$text:#7f7f82;
+
+body, html {
+    height: 100vh;
+}
 
 body {
     font-family: 'Roboto',sans-serif;
+    color: $dark;
+}
+
+.wrapper {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background-image: url(../img/fon-portfolio.jpg);
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
+}
+
+.header {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    &-item {
+        margin-left: 23px;
+    }
+    &-link {
+        color: $dark;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+        &:hover {
+            border-bottom: 1px solid $dark;
+        }
+    }
+}
+
+.title-h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 300;
+    span {
+        font-weight: 500;
+    }
+}
+
+.btn-scroll {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-about {
+    padding-top: 240px;
+}
+
+.box-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+        flex: 0 0 45%;
+        max-width: 45%;
+        position: relative;
+        &:first-child {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &_back {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: -108px;
+    }
+    &_vertical {
+        position: absolute;
+        left: 115px;
+        letter-spacing: 0px;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        top: 150px;
+        font-size: 16px;
+        &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: $dark;
+            position: absolute;
+            right: 10px;
+            top: 85px;
+        }
+    }
+    &_text {
+        color: $text;
+        font-size: 16px;
+    }
 }

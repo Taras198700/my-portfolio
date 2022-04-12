@@ -1,4 +1,165 @@
+body, html {
+  height: 100vh;
+}
+
 body {
   font-family: 'Roboto',sans-serif;
+  color: #22222b;
+}
+
+.wrapper {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main {
+  background-image: url(../img/fon-portfolio.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 33px;
+  padding-bottom: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 23px;
+}
+
+.nav-link {
+  color: #22222b;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #22222b;
+}
+
+.title-h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.title-h1 span {
+  font-weight: 500;
+}
+
+.btn-scroll {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.section-about {
+  padding-top: 240px;
+}
+
+.box-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-about-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+  max-width: 45%;
+  position: relative;
+}
+
+.box-about-item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.box-about_back {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -108px;
+}
+
+.box-about_vertical {
+  position: absolute;
+  left: 115px;
+  letter-spacing: 0px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 150px;
+  font-size: 16px;
+}
+
+.box-about_vertical::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #22222b;
+  position: absolute;
+  right: 10px;
+  top: 85px;
+}
+
+.box-about_text {
+  color: #7f7f82;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
