@@ -91,6 +91,18 @@ body {
   font-weight: 500;
 }
 
+.title-h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.title-h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .btn-scroll {
   background-color: transparent;
   border: none;
@@ -100,15 +112,20 @@ body {
 
 .section-about {
   padding-top: 240px;
+  padding-bottom: 120px;
+}
+
+.section-about .title-h2 {
+  margin-bottom: 16;
 }
 
 .box-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -118,7 +135,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 45%;
           flex: 0 0 45%;
-  max-width: 45%;
+  max-width: 44%;
   position: relative;
 }
 
@@ -129,6 +146,10 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 45%;
 }
 
 .box-about_back {
@@ -140,6 +161,7 @@ body {
 
 .box-about_vertical {
   position: absolute;
+  left: 0;
   left: 115px;
   letter-spacing: 0px;
   -webkit-writing-mode: vertical-lr;
@@ -147,6 +169,7 @@ body {
           writing-mode: vertical-lr;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  bottom: 58px;
   top: 150px;
   font-size: 16px;
 }
@@ -165,7 +188,8 @@ body {
 .box-about_text {
   color: #7f7f82;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
+  margin-bottom: 48px;
 }
 
 .progress-bar-text {
@@ -209,6 +233,20 @@ body {
 
 .section-services {
   background-color: #faf9fe;
+  padding-bottom: 120px;
+}
+
+.title-h21 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.after-title {
+  font-size: 16px;
+  color: #7f7f82;
 }
 
 .service {
@@ -217,5 +255,36 @@ body {
   -ms-grid-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.service_text {
+  color: #7f7f82;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.service_link {
+  color: #22222b;
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+}
+
+.service_link-text {
+  opacity: 0;
+  width: 0;
+}
+
+.service_link::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 1px;
+  background-color: #22222b;
+  position: absolute;
+  top: calc(50% -1px);
+  right: -34px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
