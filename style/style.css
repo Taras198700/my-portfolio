@@ -259,6 +259,12 @@ body {
   margin-bottom: 30px;
 }
 
+.service-item:hover .service_link-text {
+  width: inherit;
+  opacity: 1;
+  padding-right: 9px;
+}
+
 .service_text {
   color: #7f7f82;
   font-size: 14px;
@@ -285,6 +291,9 @@ body {
 .service_link-text {
   opacity: 0;
   width: 0;
+  padding-right: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .service_link-line {
@@ -292,10 +301,5 @@ body {
   width: 25px;
   height: 1px;
   background-color: #22222b;
-}
-
-.service_link:hover .service_link-text {
-  width: inherit;
-  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
