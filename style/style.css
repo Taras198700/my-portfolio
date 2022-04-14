@@ -256,6 +256,7 @@ body {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template: 1fr 1fr / 1fr 1fr 1fr;
   grid-gap: 25px;
+  margin-bottom: 30px;
 }
 
 .service_text {
@@ -269,6 +270,16 @@ body {
   font-size: 14px;
   text-decoration: none;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20 0;
 }
 
 .service_link-text {
@@ -276,15 +287,15 @@ body {
   width: 0;
 }
 
-.service_link::before {
-  content: "";
+.service_link-line {
   display: block;
   width: 25px;
   height: 1px;
   background-color: #22222b;
-  position: absolute;
-  top: calc(50% -1px);
-  right: -34px;
-  margin-top: 10px;
+}
+
+.service_link:hover .service_link-text {
+  width: inherit;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
