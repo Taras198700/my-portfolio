@@ -312,3 +312,22 @@ body {
         padding: 11px 57px;
     }
 }
+
+.section-advanteges {
+    padding-top: 122px;
+    padding-bottom: 100px;
+    background-color: $light;
+}
+
+.advanteges {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    &_title {
+        font-size: 16px;
+        span {
+            font-size: 22px;
+            display: block;
+        }
+    }
+}

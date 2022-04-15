@@ -406,4 +406,29 @@ body {
   background-color: #fff;
   padding: 11px 57px;
 }
+
+.section-advanteges {
+  padding-top: 122px;
+  padding-bottom: 100px;
+  background-color: #faf9fe;
+}
+
+.advanteges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.advanteges_title {
+  font-size: 16px;
+}
+
+.advanteges_title span {
+  font-size: 22px;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
