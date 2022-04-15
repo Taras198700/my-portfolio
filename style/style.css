@@ -425,10 +425,20 @@ body {
 
 .advanteges_title {
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 .advanteges_title span {
   font-size: 22px;
   display: block;
+  font-weight: 500;
+}
+
+.advanteges_icon {
+  background-color: #22222b;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
