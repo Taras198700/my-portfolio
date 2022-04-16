@@ -319,28 +319,7 @@ body {
     background-color: $light;
 }
 
-.advanteges {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 5px;
-    &_title {
-        font-size: 16px;
-        text-transform: uppercase;
-        span {
-            font-size: 22px;
-            display: block;
-            font-weight: 500;
-        }
-    }
-    &_icon {
-        background-color: $dark;
-        width: 70px;
-        height: 70px;
-        border-radius: 100%;
-        margin:auto;
-    }
-}
+
 
 .section-form {
     padding-top: 122px;
