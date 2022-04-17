@@ -319,7 +319,46 @@ body {
     background-color: $light;
 }
 
-
+.advanteges {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 750px;
+    &_title {
+        font-size: 16px;
+        text-transform: uppercase;
+        span {
+            font-size: 22px;
+            display: block;
+            font-weight: 500;
+        }
+    }
+    &_icon {
+        background-color: $light;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        margin:0 auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        &-01 {
+            background-image: url(../img/free-icon-font-grin-6275924.png);
+            background-size: 32px 32px;
+        }
+        &-02 {
+            background-image: url(../img/completed-project.png);
+            background-size: 32px 32px;
+        }
+        &-03 {
+            background-image: url(../img/ears-expiriens.png);
+            background-size: 32px 32px;
+        }
+        &-04 {
+            background-image: url(../img/wins-awards.png);
+            background-size: 32px 32px;
+        }
+    }
+}
 
 .section-form {
     padding-top: 122px;
@@ -329,7 +368,7 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    max-width: 750px;
+    width: 750px;
     margin: 0 auto;
     &_input, &_textarea {
         border: none;
@@ -337,5 +376,33 @@ body {
         font-size: 14px;
         padding: 20px;
         text-align: center;
+    }
+}
+
+footer {
+    background-color: $dark;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    width: 1170px;
+}
+
+.social-network {
+    display:flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    &_item {
+        margin-left: 10px;
+    }
+    &_link {
+        color: #fff;
     }
 }

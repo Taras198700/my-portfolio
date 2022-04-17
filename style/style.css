@@ -413,6 +413,58 @@ body {
   background-color: #faf9fe;
 }
 
+.advanteges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  width: 750px;
+}
+
+.advanteges_title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.advanteges_title span {
+  font-size: 22px;
+  display: block;
+  font-weight: 500;
+}
+
+.advanteges_icon {
+  background-color: #faf9fe;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: 0 auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.advanteges_icon-01 {
+  background-image: url(../img/free-icon-font-grin-6275924.png);
+  background-size: 32px 32px;
+}
+
+.advanteges_icon-02 {
+  background-image: url(../img/completed-project.png);
+  background-size: 32px 32px;
+}
+
+.advanteges_icon-03 {
+  background-image: url(../img/ears-expiriens.png);
+  background-size: 32px 32px;
+}
+
+.advanteges_icon-04 {
+  background-image: url(../img/wins-awards.png);
+  background-size: 32px 32px;
+}
+
 .section-form {
   padding-top: 122px;
   padding-bottom: 100px;
@@ -426,7 +478,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 750px;
+  width: 750px;
   margin: 0 auto;
 }
 
@@ -436,5 +488,43 @@ body {
   font-size: 14px;
   padding: 20px;
   text-align: center;
+}
+
+footer {
+  background-color: #22222b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 16px;
+  width: 1170px;
+}
+
+.social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.social-network_item {
+  margin-left: 10px;
+}
+
+.social-network_link {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
